@@ -94,6 +94,8 @@ def regisztracio():
                     print("A jelszónak legalább 6 karakter hosszúnak kell lennie! Próbáld újra.")
                 elif not any(char.isdigit() for char in jelszo):
                     print("A jelszód nem eléggé erős! Használj számokat is!")
+                elif not any(char.isalpha() for char in jelszo):
+                    print("A jelszód nem eléggé erős! Használj betüket is!")
                 else:
                     jelszo2 = input("Erősítsd meg a jelszavadat: ")
 
