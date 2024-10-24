@@ -1,6 +1,8 @@
 f_nevek = []
 jelszavak = []
 
+with open("felhasználó.txt", "a", encoding="utf-8") as f:
+    pass 
 
 with open("felhasználó.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
